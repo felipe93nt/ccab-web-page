@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ccab-web-page'`, () => {
+  it(`should have as title 'aw-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ccab-web-page');
+    expect(app.title).toEqual('aw-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ccab-web-page app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('aw-angular app is running!');
   });
 });

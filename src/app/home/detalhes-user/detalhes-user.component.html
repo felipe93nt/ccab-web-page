@@ -1,0 +1,44 @@
+<mat-tab-group animationDuration="2000ms">
+    <mat-tab label="Usuario">
+        <div class="conteudo">
+            <mat-list-item>{{usuario?.id}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.name}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.username}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.email}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.phone}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.website}}</mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+    <mat-tab label="Endereço">
+        <div class="conteudo">
+            <mat-list-item>{{usuario.address?.city}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario.address?.street}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario.address?.suite}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario.address?.zipcode}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario.address?.geo.lat}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario.address?.geo.lng}}</mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+    <mat-tab label="Empresa">
+        <div class="conteudo">
+            <mat-list-item>{{usuario?.company?.bs}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.company?.catchPhrase}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>{{usuario?.company?.name}}</mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+</mat-tab-group>
